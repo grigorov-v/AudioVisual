@@ -110,11 +110,13 @@ a:focus {
 .demo {
 	margin: 0 1em 0.5em 0;
 	padding: 0 0 0.25em;
+	outline:none !important;
 }
 
 .demo:hover,
-.demo-current {
+.demo-current:visited{
 	color: #fff;
+	outline:none !important;
 }
 
 /* Content */

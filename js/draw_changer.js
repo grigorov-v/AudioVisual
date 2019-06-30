@@ -9,9 +9,10 @@ document.onclick = function(e) {
     var value = nElem.attr("value");
     numberAlg = Number(value);
 
-    // $('.'+className).each(function(i,elem) {
-    //     elem.removeClass("demo-current");
-    // });
+    var classCurrent = "demo-current";
+    $('.'+className).each(function(i,elem) {
+        $(this).removeClass(classCurrent);
+    });
 
-    nElem.addClass("demo-current");
+    nElem.addClass(classCurrent);
 };   
